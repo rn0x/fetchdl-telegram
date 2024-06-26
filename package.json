@@ -1,0 +1,43 @@
+{
+  "name": "fetchdl-telegram",
+  "description": "FetchDL - 📥 Download from YouTube, Facebook, Twitter, Instagram, TikTok, Twitch, SoundCloud",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon --exec node src/index.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "downloads",
+      "database"
+    ]
+  },
+  
+  "author": {
+    "name": "ryan almalki",
+    "url": "https://github.com/rn0x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rn0x/fetchdl-telegram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rn0x/fetchdl-telegram/issues"
+  },
+  "homepage": "https://github.com/rn0x/fetchdl-telegram#readme",
+  "license": "GPL-3.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "dotenv": "^16.4.5",
+    "downlib": "^1.0.8",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
