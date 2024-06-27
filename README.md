@@ -17,7 +17,6 @@ FetchDL-Telegram is a Telegram bot designed to download media content from vario
 ## Requirements
 To run FetchDL-Telegram, you need to have the following installed:
 1. **Node.js** - JavaScript runtime environment.
-2. **FFmpeg** - Multimedia framework for handling audio, video, and other multimedia files.
 
 ## Installation
 To install FetchDL-Telegram, follow these steps:
@@ -72,6 +71,51 @@ FetchDL-Telegram uses the following npm packages:
 - **dotenv**: Module to load environment variables from a `.env` file.
 - **downlib**: Library for downloading media from various platforms.
 - **telegraf**: Telegram bot framework for Node.js.
+
+
+## Termux 
+
+<div align="center">
+
+<img align="center" src = "./extras/termux.jpg" alt ="FetchDL_termux.jpg"> <br><br>
+
+</div>
+
+```
+You can run the bot on Android devices using the Termux app 📱. Follow these steps:
+
+1. Install proot-distro:
+   pkg install proot-distro
+
+2. Install Debian distribution:
+   proot-distro install debian
+
+3. List available Linux distributions:
+   proot-distro list
+
+4. Log in to the Debian distribution:
+   proot-distro login debian
+
+After logging into proot-distro, you can use commands as you would on a regular Linux system 🖥️.
+
+To install FetchDL-Telegram, follow these steps:
+
+1. Install git, Node.js, and npm:
+   apt update
+   apt install git nodejs npm
+
+2. Clone the repository from GitHub:
+   git clone https://github.com/rn0x/fetchdl-telegram.git
+
+3. Navigate into the project directory:
+   cd fetchdl-telegram
+
+4. Install dependencies using npm:
+   npm install
+
+
+This way, you can easily run the bot on your Android device using Termux! 🚀
+```
 
 ## License
 This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
