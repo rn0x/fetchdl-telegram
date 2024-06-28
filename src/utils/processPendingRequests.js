@@ -39,7 +39,7 @@ export default async function processPendingRequests(client) {
                 const response = await downloadFromUrl(url);
 
                 if (response?.error) {
-                    await client.telegram.sendMessage(user_id, `❌ Error downloading media: ${response.error}`, {
+                    await client.telegram.sendMessage(user_id, `❌ Error downloadFromUrl: ${response.error}`, {
                         reply_to_message_id: message_id
                     });
                 } else {
