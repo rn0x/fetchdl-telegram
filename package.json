@@ -33,7 +33,7 @@
   "dependencies": {
     "better-sqlite3": "^11.0.0",
     "dotenv": "^16.4.5",
-    "downlib": "^1.2.0",
+    "downlib": "^1.2.1",
     "telegraf": "^4.16.3"
   },
   "devDependencies": {
