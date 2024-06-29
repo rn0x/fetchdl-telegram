@@ -60,7 +60,7 @@ FetchDL-Telegram uses the following npm packages:
 "dependencies": {
   "better-sqlite3": "^11.0.0",
   "dotenv": "^16.4.5",
-  "downlib": "^1.1.5",
+  "downlib": "^1.1.6",
   "telegraf": "^4.16.3"
 },
 "devDependencies": {
