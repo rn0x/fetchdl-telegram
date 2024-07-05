@@ -4,7 +4,7 @@
  * github: https://github.com/rn0x
  * telegram: https://t.me/F93ii
  * repository: https://github.com/rn0x/fetchdl-telegram
- */ 
+ */
 
 // sendMedia.js
 import { Markup } from 'telegraf';
@@ -17,7 +17,7 @@ export default async function sendMedia(client, user_id, result, replyToMessageI
         let caption = createCaption(result, urlType);
         let button = null;
 
-        if (urlType === 'YouTube') {
+        if (urlType !== 'Instagram' && urlType !== 'TikTok' && urlType !== 'SoundCloud') {
             const but_1 = [Markup.button.callback('🔊 Audio Only', `download_audio:${uniqueId}`)];
             button = Markup.inlineKeyboard([but_1]);
         }
